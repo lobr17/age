@@ -53,7 +53,7 @@ for ($data3 = []; $row = mysqli_fetch_assoc($result); $data3[] = $row) ;
 </p>
 
 <p>
-    Более 30 лет:<?php foreach($data3 as $item): ?>
+    Более 30 лет(зрелые):<?php foreach($data3 as $item): ?>
         <strong> <?php $count_3 = $item["count3"]; echo $count_3;?> человек</p> <br> <?=$count_3*100/$count; ?> % опрошенных</strong>
     <?php endforeach;?>
 </p>
